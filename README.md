@@ -10,10 +10,6 @@ This is my Math-Magician project setup in the Microverse curriculum. "Math magic
 - React App
 - GitHub
 
-## Live Demo
-
-[Live Demo Link](https://aburayhaan.github.io/Math-Magicians/)
-
 ## Getting Started
 
 To get a local copy up and running:
