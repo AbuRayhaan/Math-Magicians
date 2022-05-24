@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  width: 80%;
+  margin: 40px;
+}
+
+.calc-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(60px, auto) repeat(5, 60px);
+  justify-content: center;
+  align-content: center;
+  background: rgb(216, 216, 216);
+}
+
+.output {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  background: gray;
+  grid-column: 1 / -1;
+  font-size: 2rem;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+.zero-span2 {
+  grid-column: 1 / 3;
+}
+
+.calc-container > button {
+  cursor: pointer;
+  font-size: 1rem;
+  outline: none;
+  text-align: center;
+}
+
+.operators {
+  background-color: rgb(236, 154, 2);
+}
