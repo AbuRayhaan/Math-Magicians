@@ -8,23 +8,23 @@ class Calculator extends Component {
     this.state = {
       operation: null,
       next: null,
-      result: null,
+      total: null,
     };
   }
 
   Calculation(event) {
     this.calcButtons = event.target.innerText;
-    const calculationButtons = this.calcButtons;
+    const calculatorButton = this.calcButtons;
     const obj = this.state;
-    this.setState(calculate(obj, calculationButtons));
+    this.setState(calculate(obj, calculatorButton));
   }
 
   render() {
-    const { operation, next, result } = this.state;
+    const { total, next, operation } = this.state;
 
     return (
       <div className="calc-container">
-        <div className="output">{ next || operation || result || 0 }</div>
+        <div className="output">{ next || operation || total || 0 }</div>
         <button type="button" onClick={this.Calculation.bind(this)}>AC</button>
         <button type="button" onClick={this.Calculation.bind(this)}>+/-</button>
         <button on type="button" onClick={this.Calculation.bind(this)}>%</button>
