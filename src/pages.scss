@@ -1,0 +1,154 @@
+.nav-col {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background: #303638;
+}
+
+.nav-col h1,
+.cal-box p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-col h1,
+a {
+  color: #f5913e;
+}
+
+.show-menu {
+  height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background: gray;
+}
+
+.flex {
+  display: flex;
+}
+
+.navList-bg {
+  display: none;
+}
+
+.active {
+  color: blue;
+  text-decoration: underline;
+}
+
+.navList-sm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.welcome {
+  padding: 1rem;
+}
+
+.welcome h2 {
+  margin-bottom: 1rem;
+}
+
+.welcome p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.cal-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 1.5rem;
+  padding: 0.5rem;
+}
+
+.q-b {
+  padding: 0.5rem;
+  margin: 1.5rem;
+}
+
+.cal-box .wrapper {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-col h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .navList-bg {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navList-bg li:nth-child(1),
+  .navList-bg li:nth-child(2) {
+    border-right: 3px solid blue;
+    padding-right: 1rem;
+  }
+
+  .welcome,
+  .q-b {
+    margin-top: 3.75rem;
+  }
+
+  .welcome h2,
+  .welcome p {
+    margin-bottom: 2rem;
+  }
+
+  .cal-box .wrapper {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cal-box p {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    margin-bottom: -3.75rem;
+  }
+
+  .cal-box .wrapper {
+    max-width: 700px;
+    align-self: flex-end;
+  }
+
+  .nav-col h1 {
+    font-size: 2rem;
+  }
+
+  .nav-col {
+    padding: 1% 8%;
+  }
+}
