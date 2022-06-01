@@ -8,7 +8,6 @@ This is my Math-Magician project setup in the Microverse curriculum. "Math magic
 
 - HTML
 - CSS
-- Javascript (Webpack)
 - React App
 - GitHub
 
