@@ -1,6 +1,6 @@
 # Math-Magician
 
-![screenshot](images/screenshot.png)
+![screenshot](images/screenshotFull.png)
 
 This is my Math-Magician project setup in the Microverse curriculum. "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) created using React and allows users to make simple calculation and read a random math-related quote.
 
