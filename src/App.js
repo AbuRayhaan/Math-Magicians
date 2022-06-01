@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import Calculator from './components/Calculator';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
+import Quotes from './pages/Quotes';
+import CalculatorPage from './pages/CalculatorPage';
+import Navbar from './pages/Navbar';
 
 class App extends Component {
   constructor(props) {
@@ -10,9 +14,16 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <Calculator />
-      </div>
+      <>
+        <Navbar />
+        <div className="container">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/calculator" element={<CalculatorPage />} />
+            <Route exact path="/quotes" element={<Quotes />} />
+          </Routes>
+        </div>
+      </>
     );
   }
 }
