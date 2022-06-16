@@ -11,6 +11,10 @@ This is my Math-Magician project setup in the Microverse curriculum. "Math magic
 - React App
 - GitHub
 
+## Live Demo
+
+[Live Demo Link](https://math-magician-calc-app.netlify.app/)
+
 ## Getting Started
 
 To get a local copy up and running:
